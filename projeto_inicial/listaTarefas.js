@@ -15,7 +15,10 @@ const criarTarefa = (evento) => {
     mensagemErro.classList.add('mensagem-erro')
   
      if(input.value == ""){
-         return false; 
+
+        input.focus();
+        alert('Campo obrigatório'); 
+        return false; 
          
      }else{
      
