@@ -1,5 +1,12 @@
 body {
   margin: 0;
+
+  background-image: url("https://image.freepik.com/vetores-gratis/ceu-estelar-de-fundo-em-aquarela_125540-28.jpg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  
 }
 
 .app {
@@ -16,6 +23,7 @@ body {
   padding: 1rem;
   min-width: 400px;
   min-height: 300px;
+  opacity: 0.9;
 }
 
 .title {
