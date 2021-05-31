@@ -11,15 +11,16 @@ const criarTarefa = (evento) => {
     const input = document.querySelector('[data-form-input]')
     const valor = input.value 
     const tarefa = document.createElement('li')
-    // let mensagemErro = document.createElement('li')
-    // mensagemErro.classList.add('mensagem-erro')
+    let mensagemErro = document.createElement('li')
+    mensagemErro.classList.add('mensagem-erro')
   
-    // if(input.value == ""){
-    //     mensagemErro.innerHTML =  `<p class="mensagem-erro">Favor, não inserir tarefa vazia</p>` 
-    //     lista.appendChild(mensagemErro)
-    // }else{
+     if(input.value == ""){
+         return false; 
+         
+     }else{
+     
+        if(input)
         
-    
         var data = new Date(); 
         var dia = data.getDate(); 
         var mes = data.getMonth()+1; 
@@ -34,10 +35,12 @@ const criarTarefa = (evento) => {
         tarefa.appendChild(BotaoDeleta())
         lista.appendChild(tarefa)
  
+        // document.querySelector('.mensagem-erro').style.display = "none"; 
+
 
     input.value = ""
 }
-
+}
 const novaTarefa = document.querySelector('[data-form-button]')
 
 
